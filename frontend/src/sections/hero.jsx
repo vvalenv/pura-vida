@@ -4,6 +4,10 @@ import { Card1, Card2, Card3 } from '../components/articles.jsx'
 import surfIcon from '../assets/icons/surfing.png'
 import yogaIcon from '../assets/icons/yoga.png'
 import wavesIcon from '../assets/icons/olas.png'
+import gastronomia from '../assets/gastronomia.jpg'
+import surf from '../assets/surf.jpg'
+import yoga from '../assets/yoga.jpg'
+import otras from '../assets/otras.jpeg'
 
 export const Hero = () => {
     return (
@@ -40,7 +44,7 @@ export const Hero = () => {
                     </div>
                 </div>
                 <Card2 title="Gastronomía"
-                    img="gastronomia.jpg"
+                    img={gastronomia}
                     desc="Mesa larga, producto local y recetas caseras para compartir sin mirar la hora. De mañana a noche, el bar acompaña el plan"
                     btnText="Ver la propuesta" />
             </section>
@@ -52,17 +56,17 @@ export const Hero = () => {
                         <div className='card3-container'>
                             <img src={surfIcon} alt="Surf" />
                             <Card3 title="Surf"
-                            img="surf.jpg" />
+                            img={surf} />
                         </div>
                         <div className='card3-container'>
                             <img src={yogaIcon} alt="Yoga" />
                             <Card3 title="Yoga"
-                            img="yoga.jpg" />
+                            img={yoga} />
                         </div>
                         <div className='card3-container card3-center'>
                             <img src={wavesIcon} alt="Olas" />
                             <Card3 title="Otras actividades"
-                            img="otras.jpeg" />
+                            img={otras} />
                         </div>
                     </div>
                 </div>
