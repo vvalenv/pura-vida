@@ -114,7 +114,7 @@
         max-width: 800px;
     }
     /*seccion 3*/
-    .hero-content2 p {
+    .hero-content2 .hero-p-extra {
         margin-left: 30px;
     }
     .hero-subtitle2 {
@@ -134,7 +134,7 @@
 
 @media (min-width: 900px) {
     /*seccion 3*/
-    .hero-content2 p {
+    .hero-content2 .hero-p-extra {
         margin-left: 40px;
     }
     .hero-subtitle2 {
