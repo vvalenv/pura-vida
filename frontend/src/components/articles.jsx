@@ -34,7 +34,7 @@ export const Card1 = ({title,img,desc,btnText,just}) => {
     )
 }
 export const Card2 = ({title,img,desc,btnText,just}) => {
-    const rutaImagen = new URL(`../assets/services/${img}`, import.meta.url).href
+    const rutaImagen = new URL(`../assets/${img}`, import.meta.url).href
     return (
         <article className={`card2 ${just === 'left' ? 'card2-left' : 'card2-right'}`}>
             <img src={rutaImagen} alt={title} className="card2-img"/>
@@ -50,7 +50,7 @@ export const Card2 = ({title,img,desc,btnText,just}) => {
 }
 
 export const Card3 = ({title,img}) => {
-    const rutaImagen = new URL(`../assets/services/${img}`, import.meta.url).href
+    const rutaImagen = new URL(`../assets/${img}`, import.meta.url).href
     return (
         <article className="card3">
             <img src={rutaImagen} alt={title} className="card3-img"/>
