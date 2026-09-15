@@ -1,0 +1,8 @@
+footer {
+    grid-row: fila-3;
+    padding: 1em;
+}
+.media-icon {
+    font-size: 1.5em;
+    cursor: pointer;
+}

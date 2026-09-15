@@ -1,0 +1,223 @@
+/*botones*/
+
+.btn {
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 0.6em 1.2em;
+    border: none;
+    border-radius: 50px;
+    transition: all .3s;
+}
+
+.btn-blue {
+    background-color: var(--blue);
+    color: var(--cream);
+}
+.btn-white {
+    background-color: var(--white);
+    color: var(--blue);
+}
+
+.btn:link,
+.btn:visited {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px var(--blue);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px var(--blue);
+}
+
+.btn::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+/*cards*/
+/*card1*/
+.card1 {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all .3s;
+    display: flex;
+    align-items: end;
+    height: 300px;
+    width: 90%;
+    background-size: cover;
+    margin: auto;
+}
+.card1-left {
+    justify-content: start;
+    text-align: start;
+}
+.card1-right {
+    justify-content: end;
+    text-align: end;
+}
+.card-img-casas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/casa_playa.jpg');
+}
+.card-img-hostel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/hostel.jpg');
+}
+.card1-title, .card1-desc {
+    color: var(--cream);
+}
+.card1-content {
+    padding: 1em;
+}
+.card1-title {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--font-subtitles);
+}
+.btn-card1 {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+/*card 2*/
+.card2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: var(--cream);
+    padding-bottom: 1em;
+}
+.card2-img {
+    width: 100%;
+    height: 300px;
+}
+.card2-content {
+    text-align: center;
+}
+.card2-title {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3em;
+}
+.card2-desc {
+   padding: 0 0.8em;
+}
+/*card 3*/
+.card3 {
+    height: 250px;
+    width: 170px;
+    border-radius: 15px;
+    margin: auto;
+    display: grid;
+    grid-template-rows: 220px auto;
+    cursor: pointer;
+    text-decoration: none;
+}
+.card3:hover .card3-title {
+    background-color: var(--olive);
+    color: var(--cream);
+}
+.card3-img {
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+.card3-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.5rem;
+    background-color: var(--cream);
+    color: var(--olive);
+    padding: 0.3em 0;
+    margin: 0;
+    border-radius: 0 0 15px 15px;
+    transition: 0.3s all;
+}
+
+@media (min-width: 500px) {
+    .card1 {
+        width: 75%;
+    }
+    .card2 {
+        flex-direction: row;
+        padding-bottom: 0;
+        align-items: center;
+    }
+    .card2-img {
+        width: 50%;
+    }
+    .card3 {
+        width: 220px;
+    }
+}
+
+@media (min-width: 768px) {
+    /*cards*/
+    .card1 {
+        width: 350px;
+        height: 350px;
+    }
+    .card1-title {
+        font-size: 2.5rem;
+    }
+    .card1-desc {
+        font-size: 1rem;
+        max-width: 300px;
+    }
+    .btn-card1 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    /*cards*/
+    .card1 {
+        width: 40vw;
+        max-width: 700px;
+        height: 400px;
+    }
+    /*card2*/
+    .card2-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card2-img {
+        height: 400px;
+        max-width: 600px;
+    }
+    .card2-title {
+        font-size: 5em;
+    }
+    .card2-desc {
+        max-width: 550px;
+    }
+
+    .card3 {
+        width: 250px;
+        height: 270px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card3 {
+        width: 300px;
+    }
+}
