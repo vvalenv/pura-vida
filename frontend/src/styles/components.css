@@ -13,6 +13,10 @@
     background-color: var(--blue);
     color: var(--cream);
 }
+.btn-olive {
+    background-color: var(--olive);
+    color: var(--cream);
+}
 .btn-white {
     background-color: var(--white);
     color: var(--blue);
@@ -97,6 +101,9 @@
     gap: 1em;
     background-color: var(--cream);
     padding-bottom: 1em;
+}
+.card2-olive {
+    color: var(--olive);
 }
 .card2-img {
     width: 100%;
@@ -208,6 +215,9 @@
     }
     .card2-desc {
         max-width: 550px;
+    }
+    .card2-left {
+        flex-direction: row-reverse;
     }
 
     .card3 {

@@ -33,14 +33,14 @@ export const Card1 = ({title,img,desc,btnText,just}) => {
         </article>
     )
 }
-export const Card2 = ({title,img,desc,btnText,just}) => {
+export const Card2 = ({title,img,desc,btnText,just,style2}) => {
     return (
-        <article className={`card2 ${just === 'left' ? 'card2-left' : 'card2-right'}`}>
+        <article className={`card2 ${just === 'left' ? 'card2-left':'card2-right'} ${style2 === 'olive' ? 'card2-olive':'card2-blue'}`}>
             <img src={img} alt={title} className="card2-img"/>
             <div className="card2-content">
                 <h3 className="card2-title">{title}</h3>
                 <p className="card2-desc">{desc}</p>
-                <button className="btn btn-white btn-animated btn-card2">
+                <button className={`btn btn-animated btn-card2 ${style2 === 'olive' ? 'btn-olive':'btn-white'}`}>
                     <span className="btn-text">{btnText}</span>
                 </button>
             </div>

@@ -13,6 +13,10 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo1.jpg');
     background-size: cover;
 }
+.hero-section1 p {
+    color: var(--cream);
+    text-align: center;
+}
 .hero-content {
     padding: 0.5em;
     display: flex;

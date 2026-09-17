@@ -1,0 +1,11 @@
+.main-hospedaje {
+    grid-row: fila-2;
+    display: grid;
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3];
+}
+.port-img-hosp {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo2.jpg');
+}
+.hosp-section2 {
+    grid-row: fila-2;
+}

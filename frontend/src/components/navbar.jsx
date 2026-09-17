@@ -16,7 +16,7 @@ export const Navbar = () => {
                 <img src={ logo } alt="Pura Vida" />
             </Link> 
             <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`} aria-label="Navegación principal">
-                <Link to="#hospedaje">Hospedaje</Link>
+                <Link to="/hospedajes">Hospedaje</Link>
                 <Link to="#experiencias">Experiencias</Link>
                 <Link to="#tienda">Negocios</Link>
                 <Link to="#ubicacion">Ubicación</Link>
