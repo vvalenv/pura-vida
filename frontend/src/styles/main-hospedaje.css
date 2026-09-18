@@ -9,3 +9,58 @@
 .hosp-section2 {
     grid-row: fila-2;
 }
+.hosp-section3 {
+    background-color: var(--white);
+    color: var(--olive);
+}
+.hosp-section3 h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    margin: 1em 0;
+}
+.hosp-section3-article {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+.hosp-section3-article div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hosp-section3-article div p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.icon-hosp {
+    font-size: 1.5em;
+}
+@media (min-width: 500px) {
+    .hosp-section3-article {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 100px);
+    }
+}
+@media (min-width: 748px) {
+    .hosp-section3 h2 {
+        font-size: 4rem;
+        margin: 0.5em 0;
+    }
+    .hosp-section3-article {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 100px);
+    }
+}
+@media (min-width: 900px) {
+    .hosp-section3-article {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(3s, 100px);
+    }
+}

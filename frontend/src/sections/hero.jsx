@@ -1,6 +1,7 @@
 import '../styles/main-hero.css'
 import '../styles/components.css'
 import { Card1, Card2, Card3 } from '../components/articles.jsx'
+import { useRef } from 'react';
 import surfIcon from '../assets/icons/surfing.png'
 import yogaIcon from '../assets/icons/yoga.png'
 import wavesIcon from '../assets/icons/olas.png'
@@ -10,12 +11,16 @@ import yoga from '../assets/services/yoga.jpg'
 import otras from '../assets/services/otras.jpeg'
 
 export const Hero = () => {
+    const section3Ref = useRef(null);
+    const scrollToSection = () => {
+        section3Ref.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
     return (
         <main className="main-hero">
             <section className="hero-section1">
                 <div className="hero-content">
                     <h1 className="hero-title">Tu refugio de mar y vida simple en Acantilados</h1>
-                    <button className="btn btn-blue btn-animated" type="button">
+                    <button className="btn btn-blue btn-animated" type="button" onClick={scrollToSection}>
                         <span className="btn-text">Elegí tu espacio</span>
                     </button>
                 </div>
@@ -27,7 +32,7 @@ export const Hero = () => {
                     <p className="hero-p-subtext">Acá cada día se hace con otro ritmo: mar cerca, comida hecha en casa y gente que llega para sentirse parte.</p>
                 </div>
             </section>
-            <section className="hero-section3">
+            <section className="hero-section3" ref={section3Ref}>
                 <div className="hero-content2">
                     <p className="hero-p-extra">Para quedarse</p>
                     <h2 className="hero-subtitle2">Elegí como querés vivir la costa</h2>

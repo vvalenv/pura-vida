@@ -63,6 +63,10 @@
     width: 90%;
     background-size: cover;
     margin: auto;
+    transition: all 0.3;
+}
+.card1:hover {
+    transform: scale(1.05);
 }
 .card1-left {
     justify-content: start;
@@ -123,12 +127,12 @@
 }
 /*card 3*/
 .card3 {
-    height: 250px;
+    height: 230px;
     width: 170px;
     border-radius: 15px;
     margin: auto;
     display: grid;
-    grid-template-rows: 220px auto;
+    grid-template-rows: 200px auto;
     cursor: pointer;
     text-decoration: none;
 }
@@ -138,7 +142,7 @@
 }
 .card3-img {
     object-fit: cover;
-    height: 220px;
+    height: 100%;
     width: 100%;
     border-radius: 15px 15px 0 0;
 }
@@ -222,7 +226,6 @@
 
     .card3 {
         width: 250px;
-        height: 270px;
     }
 }
 

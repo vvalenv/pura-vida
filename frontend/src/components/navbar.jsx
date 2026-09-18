@@ -21,6 +21,7 @@ export const Navbar = () => {
                 <Link to="#tienda">Negocios</Link>
                 <Link to="#ubicacion">Ubicación</Link>
                 <Link to="#voluntariado">Voluntariado</Link>
+                <Link to="#reservas" className="link-reserva">Reserva ahora</Link>
             </nav>
             <FontAwesomeIcon icon={faBars} className="menu-toggle" onClick={toggleMenu} aria-label="Abrir menú de navegación" />
         </div>
