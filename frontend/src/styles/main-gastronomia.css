@@ -1,0 +1,205 @@
+.main-gast {
+    grid-row: fila-2;
+    display: grid;
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3] auto [fila-4] auto [fila-5];
+}
+.section1-gast {
+    height: 100%;
+    grid-row: fila-1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo3.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.text-section1-gast {
+    color: var(--white);
+}
+.p-top-section1-gast {
+    text-transform: uppercase;
+    margin-bottom: 1.5em;
+}
+.p2-top-section1-gast {
+    text-transform: uppercase;
+    padding: 0.4em;
+    background-color: var(--red);
+    display: inline;
+    font-weight: 500;
+}
+.text-section1-gast h1 {
+    font-size: 5rem;
+    margin-top: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--font-display);
+}
+.subtext-section-gast {
+    font-family: var(--font-subtitles);
+}
+.aside-section1-gast {
+    background-color: #000;
+    padding: 1em;
+    color: var(--white);
+    font-family: var(--font-display);
+}
+.aside-section1-gast h3 {
+    font-size: 1.7rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: end;
+}
+.p-hour-aside-section1-gast {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--red);
+}
+.p-day-aside-section1-gast {
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-style: italic;
+    font-family: var(--font-body);
+    text-align: end;
+    margin: 0;
+}
+
+/*seccion 2*/
+.section2-gast {
+    grid-row: fila-2;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1em;
+}
+.p-top-section2-gast {
+    text-transform: uppercase;
+    color: var(--red);
+    margin-top: 2em;
+}
+.h2-section2-gast {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+}
+.article-section2-gast {
+    background-color: var(--white);
+    color: #000;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 1em;
+    text-align: center;
+    font-size: 1.1rem;
+}
+.button-section2-gast {
+    padding: 0.5em 1em;
+    background-color: var(--red);
+    color: var(--cream);
+    text-transform: uppercase;
+    font-family: var(--font-display);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+.button-section2-gast:hover {
+    transform: scale(1.1);
+}
+.footer-section2-gast {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    width: 100%;
+    gap: 1em;
+}
+.footer-section2-gast h3 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+.footer-section2-gast p {
+    color: #000;
+    margin-top: 0.5em;
+}
+.section3-gast {
+    grid-row: fila-3;
+    text-align: center;
+    padding: 1em;
+}
+.section3-gast span {
+    display: block;
+}
+.section4-gast {
+    grid-row: fila-4;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondogast.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+.section4-gast h2 {
+    color: var(--red);
+    margin: 0.5em 0;
+}
+.container-gast-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em 0;
+}
+.gast-item {
+    background-color: var(--cream);
+    color: var(--red);
+    padding: 0.5em;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    text-align: center;
+    border: 6px inset var(--red);
+    font-size: 1.5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+    .section1-gast {
+        display: block;
+    }
+    .text-section1-gast {
+        position: absolute;
+        top: 120px;
+        left: 1em;
+    }
+    .text-section1-gast h1 {
+        font-size: 5.5rem;
+        letter-spacing: 4px;
+    }
+    .aside-section1-gast {
+        position: absolute;
+        top: 60%;
+        right: 3em;
+    }
+    .article-section2-gast {
+        max-width: 850px;
+        font-size: 1.1rem;
+    }
+    .footer-section2-gast {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+    .h2-section2-gast {
+        font-size: 4rem;
+    }
+    .container-gast-items {
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+    
+}

@@ -1,5 +1,4 @@
 import '../styles/main-hero.css'
-import '../styles/components.css'
 import { Card1, Card2, Card3 } from '../components/articles.jsx'
 import { useRef } from 'react';
 import surfIcon from '../assets/icons/surfing.png'
@@ -59,17 +58,17 @@ export const Hero = () => {
                     <h2 className='hero-title-sec4'>Mar, aire y tiempo para jugar</h2>
                     <div className="div-cards3-sec4">
                         <div className='card3-container'>
-                            <img src={surfIcon} alt="Surf" />
+                            <img src={surfIcon} alt="Surf" className='card3-icon'/>
                             <Card3 title="Surf"
                             img={surf} />
                         </div>
                         <div className='card3-container'>
-                            <img src={yogaIcon} alt="Yoga" />
+                            <img src={yogaIcon} alt="Yoga" className='card3-icon'/>
                             <Card3 title="Yoga"
                             img={yoga} />
                         </div>
                         <div className='card3-container card3-center'>
-                            <img src={wavesIcon} alt="Olas" />
+                            <img src={wavesIcon} alt="Olas" className='card3-icon'/>
                             <Card3 title="Otras actividades"
                             img={otras} />
                         </div>

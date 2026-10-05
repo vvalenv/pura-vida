@@ -17,10 +17,10 @@ export const Navbar = () => {
             </Link> 
             <nav className={`main-nav ${isMenuOpen ? 'open' : ''}`} aria-label="Navegación principal">
                 <Link to="/hospedajes">Hospedaje</Link>
-                <Link to="#experiencias">Experiencias</Link>
-                <Link to="#tienda">Negocios</Link>
+                <Link to="/gastronomia">Gastronomia</Link>
+                <Link to="/experiencias">Experiencias</Link>
+                <Link to="#nosotros">Nosotros</Link>
                 <Link to="#ubicacion">Ubicación</Link>
-                <Link to="#voluntariado">Voluntariado</Link>
                 <Link to="#reservas" className="link-reserva">Reserva ahora</Link>
             </nav>
             <FontAwesomeIcon icon={faBars} className="menu-toggle" onClick={toggleMenu} aria-label="Abrir menú de navegación" />

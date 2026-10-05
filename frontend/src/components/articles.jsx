@@ -1,4 +1,11 @@
 import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Keyboard } from "swiper/modules";
+import swiper1 from "../assets/services/swiper1.jpg";
+import swiper2 from "../assets/services/swiper2.jpg";
+import swiper3 from "../assets/services/swiper3.jpg";
+import '../styles/components.css'
+import "swiper/css";
 export const ArticleHome = ({title,desc1,desc2,img1,img2,img3,btnText,link}) => {
     return (
         <article className="article-home">
@@ -54,5 +61,56 @@ export const Card3 = ({title,img}) => {
             <img src={img} alt={title} className="card3-img"/>
             <h4 className="card3-title">{title}</h4>
         </article>
+    )
+}
+
+export const Card4 = ({title, img, tags = [], label,}) => {
+    return (
+        <article className="card4">
+            <header className="header-card4">
+                <h3>{title}</h3>
+            </header>
+            <div className="content-card4">
+                <img src={img} alt={title} className="img-card4" loading="lazy" />
+                <ul className="ul-tags-card4">
+                    {tags.map((tag) => (
+                        <li key={tag} className="li-tags-card4">{tag}</li>
+                    ))}
+                </ul>
+            </div>
+            <button type="button" className="button-card4">{label}</button>
+        </article>
+    )
+}
+export const Carousel = () => {
+    const imagenesSwiper = [
+        { src: swiper1, alt: "Playa soleada" },
+        { src: swiper2, alt: "Atardecer frente al mar" },
+        { src: swiper3, alt: "Bar" },
+    ];
+    const slides = [...imagenesSwiper, ...imagenesSwiper];
+    return (
+        <Swiper
+            className="galeria__swiper"
+            modules={[Autoplay, Keyboard]}
+            loop={true}
+            centeredSlides={true}
+            slidesPerView="auto"
+            spaceBetween={32}
+            speed={1000}
+            grabCursor={true}
+            keyboard={{ enabled: true }}
+            autoplay={{
+            delay: 1000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+            }}
+        >
+        {slides.map((img, i) => (
+          <SwiperSlide key={i} className="galeria__slide">
+            <img src={img.src} alt={img.alt} draggable={false} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
     )
 }
