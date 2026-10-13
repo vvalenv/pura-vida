@@ -1,0 +1,202 @@
+.main-nosotros {
+    grid-row: fila-2;
+    display: grid;
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3];
+}
+.section1-nosotros {
+    grid-row: fila-1;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondous.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+.content-sec1-us {
+    text-align: center;
+    padding: 0 1rem;
+}
+.content-sec1-us span {
+    display: block;
+}
+.section1-nosotros-text {
+    text-transform: uppercase;
+}
+.section1-nosotros-title {
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    line-height: 1;
+    font-weight: 700;
+    margin: 0;
+    font-family: var(--font-display);
+}
+.section1-nosotros-subtext {
+    font-family: var(--font-subtitles);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+/*seccion 2*/
+.content-section2-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.header-section2-nosotros p {
+    color: #000;
+    text-align: center;
+}
+.header-section2-nosotros h2 {
+    text-align: center;
+}
+.timeline-nosotros {
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+}
+.timeline__item-nosotros {
+  position: relative;
+  padding: 0 0 2rem 2.25rem;
+}
+.timeline__item-nosotros:last-child {
+  padding-bottom: 0;
+}
+.timeline__title-nosotros {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-wrap: balance;
+}
+.timeline__text-nosotros {
+  margin: 0;
+  max-width: 44ch;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #000;
+}
+/* Contenedor del punto + línea (a la izquierda en mobile) */
+.timeline__dot-nosotros {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: 1rem;
+}
+/* Línea vertical */
+.timeline__dot-nosotros::before {
+  content: "";
+  position: absolute;
+  top: 0.8rem;
+  bottom: -0.3rem;
+  left: calc(50% - 1px);
+  width: 2px;
+  background: #9b907b;
+}
+.timeline__item-nosotros:last-child .timeline__dot-nosotros::before {
+  display: none;
+}
+/* Punto */
+.timeline__dot-nosotros::after {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  left: 0;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #9b907b;
+  box-shadow: 0 0 0 4px var(--cream);
+}
+/* "Hoy": el punto se llena de azul */
+.timeline__item-nosotros--current .timeline__dot-nosotros::after {
+  background: var(--blue);
+}
+@media (min-width: 768px) {
+    .section1-nosotros {
+        align-items: end;
+        justify-content: start;
+    }
+    .content-sec1-us {
+        padding: 0 0 1.5rem 3rem;
+        text-align: start;
+    }
+    .section1-nosotros-title {
+        font-size: 7rem;
+    }
+    .section1-nosotros-subtext {
+        max-width: 600px;
+    }
+}
+@media (min-width: 900px) {
+    .content-section2-nosotros {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .content-section2-nosotros article {
+        max-width: 600px;
+    }
+    .header-section2-nosotros span {
+        display: block;
+    }
+    .header-section2-nosotros p {
+        text-align: start;
+    }
+    .header-section2-nosotros h2 {
+        text-align: start;
+        font-size: 5.5rem;
+    }
+    .timeline-nosotros {
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-rows: auto auto 1fr; /* título / punto / texto */
+    }
+    .timeline__item-nosotros {
+        display: grid;
+        grid-row: span 3;
+        grid-template-rows: subgrid; /* alinea títulos, línea y textos entre columnas */
+        justify-items: center;
+        padding: 0 1.25rem;
+        text-align: center;
+    }
+    .timeline__title-nosotros {
+        align-self: end;
+        margin: 0;
+        font-size: 1.9rem;
+    }
+    .timeline__dot-nosotros {
+        position: relative;
+        inset: auto;
+        width: calc(100% + 2.5rem); /* cruza el padding para que la línea sea continua */
+        height: 1rem;
+        margin: 0.9rem 0;
+    }
+    .timeline__dot-nosotros::before {
+       inset: calc(50% - 1px) 0 auto 0;
+       width: auto;
+       height: 2px;
+    }
+    .timeline__item-nosotros:last-child .timeline__dot-nosotros::before {
+        display: block;
+    }
+    /* La línea nace en el primer punto y muere en el último */
+    .timeline__item-nosotros:first-child .timeline__dot-nosotros::before {
+        left: 50%;
+    }
+    .timeline__item-nosotros:last-child .timeline__dot-nosotros::before {
+        right: 50%;
+    }
+    /* Punto centrado */
+    .timeline__dot-nosotros::after {
+        top: 0;
+        left: calc(50% - 0.5rem);
+    }
+    .timeline__text-nosotros {
+        max-width: 32ch;
+        font-size: 1rem;
+    }
+}

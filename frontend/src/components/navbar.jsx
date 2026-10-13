@@ -19,7 +19,7 @@ export const Navbar = () => {
                 <Link to="/hospedajes">Hospedaje</Link>
                 <Link to="/gastronomia">Gastronomia</Link>
                 <Link to="/experiencias">Experiencias</Link>
-                <Link to="#nosotros">Nosotros</Link>
+                <Link to="/nosotros">Nosotros</Link>
                 <Link to="#ubicacion">Ubicación</Link>
                 <Link to="#reservas" className="link-reserva">Reserva ahora</Link>
             </nav>
