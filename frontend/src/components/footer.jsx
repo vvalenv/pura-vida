@@ -17,8 +17,8 @@ export const Footer = () => {
                 <div className='content-footer-cont2'>
                     <div className='content-footer-links'>
                         <Link to="#contacto">Contacto</Link>
-                        <Link to="#nosotros">Nosotros</Link>
-                        <Link to="#ubicacion">Ubicación</Link>
+                        <Link to="/nosotros">Nosotros</Link>
+                        <Link to="/#ubicacion">Ubicación</Link>
                         <Link to="#voluntariado">Voluntariado</Link>
                     </div>
                     <button className='btn-wpp'>

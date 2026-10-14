@@ -105,14 +105,14 @@
     flex-direction: column;
     gap: 1em;
     background-color: var(--cream);
-    padding-bottom: 1em;
+    padding-bottom: 1.5em;
 }
 .card2-olive {
     color: var(--olive);
 }
 .card2-img {
     width: 100%;
-    height: 300px;
+    height: 420px;
 }
 .card2-content {
     text-align: center;
@@ -120,16 +120,20 @@
 .card2-title {
     font-family: var(--font-display);
     text-transform: uppercase;
+    letter-spacing: 2px;
     font-weight: 900;
     font-size: 3em;
 }
 .card2-desc {
-   padding: 0 0.8em;
+    font-size: 1.2rem;
+    max-width: 450px;
+    margin: 0.8em auto;
+    padding: 0 0.8em;
 }
 /*card 3*/
 .card3 {
     height: 230px;
-    width: 170px;
+    width: 180px;
     border-radius: 15px;
     margin: auto;
     display: grid;
@@ -356,7 +360,7 @@
         max-width: 600px;
     }
     .card2-title {
-        font-size: 5em;
+        font-size: 5.5em;
     }
     .card2-desc {
         max-width: 550px;

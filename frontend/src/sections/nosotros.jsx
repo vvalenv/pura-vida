@@ -63,6 +63,30 @@ export const Nosotros = () => {
                     </li>
                 </ol>
             </section>
+            <section className="section3-nosotros">
+                <ul className="section3-nosotros-list">
+                    <li className="section3-nosotros-item">
+                        <span className="section3-nosotros-icon" aria-hidden="true">🌊</span>
+                        <h3 className="section3-nosotros-title">Mar adentro</h3>
+                        <p className="section3-nosotros-text">Creemos que el océano te cambia. Por eso volvemos siempre.</p>
+                    </li>
+                    <li className="section3-nosotros-item">
+                        <span className="section3-nosotros-icon" aria-hidden="true">🤝</span>
+                        <h3 className="section3-nosotros-title">Sin jerarquías</h3>
+                        <p className="section3-nosotros-text">No somos un hotel. Acá todos ponemos la mesa.</p>
+                    </li>
+                    <li className="section3-nosotros-item">
+                        <span className="section3-nosotros-icon" aria-hidden="true">🌿</span>
+                        <h3 className="section3-nosotros-title">Lento a propósito</h3>
+                        <p className="section3-nosotros-text">Construido despacio, para durar y para que dure bien.</p>
+                    </li>
+                    <li className="section3-nosotros-item">
+                        <span className="section3-nosotros-icon" aria-hidden="true">🔥</span>
+                        <h3 className="section3-nosotros-title">Comunidad real</h3>
+                        <p className="section3-nosotros-text">Los mejores recuerdos pasan alrededor del fuego.</p>
+                    </li>
+                </ul>
+            </section>
         </main>
     )
 }

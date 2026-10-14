@@ -20,7 +20,7 @@ export const Navbar = () => {
                 <Link to="/gastronomia">Gastronomia</Link>
                 <Link to="/experiencias">Experiencias</Link>
                 <Link to="/nosotros">Nosotros</Link>
-                <Link to="#ubicacion">Ubicación</Link>
+                <Link to="/#ubicacion">Ubicación</Link>
                 <Link to="#reservas" className="link-reserva">Reserva ahora</Link>
             </nav>
             <FontAwesomeIcon icon={faBars} className="menu-toggle" onClick={toggleMenu} aria-label="Abrir menú de navegación" />

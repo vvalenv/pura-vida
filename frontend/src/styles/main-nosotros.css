@@ -1,7 +1,7 @@
 .main-nosotros {
     grid-row: fila-2;
     display: grid;
-    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3];
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3] auto [fila-4];
 }
 .section1-nosotros {
     grid-row: fila-1;
@@ -37,6 +37,9 @@
     font-weight: 600;
 }
 /*seccion 2*/
+.section2-nosotros {
+    grid-row: fila-2;
+}
 .content-section2-nosotros {
     display: flex;
     flex-direction: column;
@@ -114,6 +117,44 @@
 /* "Hoy": el punto se llena de azul */
 .timeline__item-nosotros--current .timeline__dot-nosotros::after {
   background: var(--blue);
+}
+/*seccion 3*/
+.section3-nosotros {
+    grid-row: fila-3;
+    background-color: var(--white);
+    color: #000;
+}
+.section3-nosotros-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 1.25rem;
+    margin: 0 auto;
+    padding: 1em;
+    list-style: none;
+}
+.section3-nosotros-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5em;
+}
+.section3-nosotros-icon {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1;
+}
+.section3-nosotros-title {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.section3-nosotros-text {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #3a3a3a;
 }
 @media (min-width: 768px) {
     .section1-nosotros {
@@ -198,5 +239,10 @@
     .timeline__text-nosotros {
         max-width: 32ch;
         font-size: 1rem;
+    }
+    
+    .section3-nosotros-list {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2em;
     }
 }
