@@ -7,7 +7,7 @@ import wavesIcon from '../assets/icons/olas.png'
 import gastronomia from '../assets/services/gastronomia.jpg'
 import surf from '../assets/services/surf.jpg'
 import yoga from '../assets/services/yoga.jpg'
-import otras from '../assets/services/otras.jpeg'
+import otras from '../assets/services/otras.jpg'
 
 export const Hero = () => {
     const section3Ref = useRef(null);
@@ -27,7 +27,7 @@ export const Hero = () => {
             <section className="hero-section2">
                 <div className="hero-content">
                     <p className="hero-p-extra">El ritmo de acá</p>
-                    <h2 className="hero-subtitle">Un lugar para bajar el volumen, seguir el sol y volver a conectar con lo escencial.</h2>
+                    <h2 className="hero-subtitle">Un lugar para bajar el volumen, seguir el sol y volver a conectar con lo esencial.</h2>
                     <p className="hero-p-subtext">Acá cada día se hace con otro ritmo: mar cerca, comida hecha en casa y gente que llega para sentirse parte.</p>
                 </div>
             </section>

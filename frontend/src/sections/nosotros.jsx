@@ -14,7 +14,7 @@ export const Nosotros = () => {
                 <div className="content-section2-nosotros">
                     <header className="header-section2-nosotros">
                         <p className="section1-nosotros-text">Como empezó todo</p>
-                        <h2 className="section1-nosotros-title">El deseo de sentirnos <span>en casa</span></h2>
+                        <h2 className="section1-nosotros-title">El deseo de <span>sentirnos en casa</span></h2>
                     </header>
                     <article className='article-section2-gast'>
                         <p>Pura Vida nació en 2015, a partir de un viaje de mochila por Centroamérica que nos enseñó una manera diferente de mirar la vida. 

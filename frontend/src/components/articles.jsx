@@ -43,7 +43,7 @@ export const Card1 = ({title,img,desc,btnText,just}) => {
 export const Card2 = ({title,img,desc,btnText,just,style2}) => {
     return (
         <article className={`card2 ${just === 'left' ? 'card2-left':'card2-right'} ${style2 === 'olive' ? 'card2-olive':'card2-blue'}`}>
-            <img src={img} alt={title} className="card2-img"/>
+            <img src={img} alt={title} className="card2-img" loading="lazy"/>
             <div className="card2-content">
                 <h3 className="card2-title">{title}</h3>
                 <p className="card2-desc">{desc}</p>
@@ -58,7 +58,7 @@ export const Card2 = ({title,img,desc,btnText,just,style2}) => {
 export const Card3 = ({title,img}) => {
     return (
         <article className="card3">
-            <img src={img} alt={title} className="card3-img"/>
+            <img src={img} alt={title} className="card3-img" loading="lazy"/>
             <h4 className="card3-title">{title}</h4>
         </article>
     )

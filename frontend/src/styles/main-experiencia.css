@@ -9,8 +9,9 @@
     align-items: center;
     justify-content: center;
     grid-row: fila-1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/experiencias.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo4.webp');
     background-size: cover;
+    background-position: center;
     height: 100%;
 }
 .experience-section1 h1 span {

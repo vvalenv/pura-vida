@@ -9,7 +9,7 @@ export const Hospedaje = () => {
             <section className="hero-section1 port-img-hosp">
                 <div className="hero-content">
                     <h1 className="hero-title">Elegí tu forma de vivir pura vida</h1>
-                    <p>Acá cada día se hace a otro ritmo: mar cerca, comida hecha en casa y gente que llega parra sentirse parte.</p>
+                    <p>Acá cada día se hace a otro ritmo: mar cerca, comida hecha en casa y gente que llega para sentirse parte.</p>
                 </div>
             </section>
             <section className='hosp-section2'>

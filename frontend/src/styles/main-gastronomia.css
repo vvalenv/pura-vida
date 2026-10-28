@@ -6,8 +6,9 @@
 .section1-gast {
     height: 100%;
     grid-row: fila-1;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo3.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo3.webp');
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -176,7 +177,7 @@
         left: 1em;
     }
     .text-section1-gast h1 {
-        font-size: 5.5rem;
+        font-size: 5.8rem;
         letter-spacing: 4px;
     }
     .aside-section1-gast {
