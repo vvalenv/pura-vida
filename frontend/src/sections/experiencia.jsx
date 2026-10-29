@@ -30,6 +30,9 @@ export const Experiencia = () => {
                     label="Sumar a mi reserva" />
                 </div>
             </section>
+            <section className='experience-section3'>
+                <p>Despues de la aventura, te esperamos <span>en casa para compartir la anecdota</span></p>
+            </section>
         </main>
     )
 } 

@@ -2,7 +2,7 @@
     grid-row: fila-2;
     width: 100%;
     display: grid;
-    grid-template-rows: [fila-1] 85vh [fila-2] 50vh [fila-3] auto [fila-4] auto [fila-5] auto [fila-6];
+    grid-template-rows: [fila-1] 85vh [fila-2] 50vh [fila-3] auto [fila-4] auto [fila-5] auto [fila-6] auto [fila-7];
 }
 .hero-section1 {
     height: 100%;
@@ -111,37 +111,27 @@
     gap: 1.2em;
     padding: 2em 1em;
 }
-.hero-section5-h3 {
-    font-family: var(--font-display);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 2.2rem;
-}
 .map {
     border: none;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.botonera-ubic {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.boton-ubic {
-    background-color: var(--white);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    padding: 1em 0;
-    width: 150px;
-    font-size: 0.9em;
-    font-weight: 700;
-    transition: all 0.4s;
-}
-.boton-ubic:hover {
-    background-color: var(--olive);
-    color: var(--cream);
-}
 #ubicacion { 
     scroll-margin-top: 80px; 
+}
+/*Seccion 6*/
+.hero-section6 {
+    grid-row: fila-6;
+    background-color: var(--white);
+}
+.hero-section6 .hero-content {
+    padding: 3em 1em;
+    gap: 2em;
+}
+/*Acordion*/
+.art-FAQ {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
 }
 
 @media (min-width: 768px) {
@@ -178,9 +168,6 @@
     /*seccion 5*/
     .map {
         width: 80%;
-    }
-    .hero-section5-h3 {
-        font-size: 3.5rem;
     }
 }
 

@@ -1,5 +1,5 @@
 import '../styles/main-hero.css'
-import { Card1, Card2, Card3 } from '../components/articles.jsx'
+import { Acordion, Card1, Card2, Card3 } from '../components/articles.jsx'
 import { useRef } from 'react';
 import surfIcon from '../assets/icons/surfing.png'
 import yogaIcon from '../assets/icons/yoga.png'
@@ -8,6 +8,8 @@ import gastronomia from '../assets/services/gastronomia.jpg'
 import surf from '../assets/services/surf.jpg'
 import yoga from '../assets/services/yoga.jpg'
 import otras from '../assets/services/otras.jpg'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 export const Hero = () => {
     const section3Ref = useRef(null);
@@ -79,11 +81,21 @@ export const Hero = () => {
                 <div className="hero-content">
                     <h2 className='card2-title'>Dónde estamos</h2>
                     <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.232108556001!2d-57.586271499472566!3d-38.11153416969439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e0e254c4df6d%3A0x225515a4a8b9c00e!2sPlaya%20Pura%20Vida%20MDQ!5e0!3m2!1ses-419!2sar!4v1791926641797!5m2!1ses-419!2sar" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
-                    <h3 className='hero-section5-h3'>¿Cómo llegar?</h3>
-                    <div className='botonera-ubic'>
-                        <button className='boton-ubic'>Colectivos</button>
-                        <button className='boton-ubic'>Desde la terminal</button>
-                    </div>
+                </div>
+            </section>
+            <section className='hero-section6'>
+                <div className='hero-content'>
+                    <h2 className='card2-title'>Preguntas frecuentes</h2>
+                    <article className="art-FAQ">
+                        <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                        <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                        <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                        <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
+                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                    </article>
                 </div>
             </section>
         </main>

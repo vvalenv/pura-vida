@@ -1,4 +1,19 @@
 import '../styles/main-nosotros.css'
+import foto1 from '../assets/services/gallery1.jpg'
+import foto2 from '../assets/services/gallery2.jpg'
+import foto3 from '../assets/services/gallery3.jpg'
+import foto4 from '../assets/services/gallery4.jpg'
+import foto5 from '../assets/services/gallery5.jpg'
+import foto6 from '../assets/services/gallery6.jpg'
+
+const fotos = [
+  { src: foto1, alt: 'Atardecer frente al mar desde el deck' },
+  { src: foto2, alt: 'Dos amigos mirando el mar' },
+  { src: foto3, alt: 'Clase de yoga en el bosque' },
+  { src: foto4, alt: 'Música en vivo al caer la noche' },
+  { src: foto5, alt: 'Surfista en el mar al atardecer' },
+  { src: foto6, alt: 'Grupo celebrando en la orilla' },
+];
 export const Nosotros = () => {
     return (
         <main className="main-nosotros">
@@ -86,6 +101,21 @@ export const Nosotros = () => {
                         <p className="section3-nosotros-text">Los mejores recuerdos pasan alrededor del fuego.</p>
                     </li>
                 </ul>
+            </section>
+             <section className="gallery" id="galeria">
+                <div className="gallery-inner">
+                    <header className="gallery-header">
+                        <p className="hero-p-extra">Momentos reales</p>
+                        <h2 className="gallery-title">La vida compartida</h2>
+                    </header>
+                    <ul className="gallery-grid">
+                        {fotos.map(({ src, alt },i) => (
+                        <li className={`gallery-item g${i + 1}`} key={src}>
+                            <img src={src} alt={alt} loading="lazy" />
+                        </li>
+                        ))}
+                    </ul>
+                </div>
             </section>
         </main>
     )

@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Keyboard } from "swiper/modules";
-import swiper1 from "../assets/services/swiper1.jpg";
-import swiper2 from "../assets/services/swiper2.jpg";
-import swiper3 from "../assets/services/swiper3.jpg";
+import swiper1 from "../assets/services/barra.jpg";
+import swiper2 from "../assets/services/desayuno.jpg";
+import swiper3 from "../assets/services/bar.jpg";
 import '../styles/components.css'
 import "swiper/css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
+
 export const ArticleHome = ({title,desc1,desc2,img1,img2,img3,btnText,link}) => {
     return (
         <article className="article-home">
@@ -84,8 +87,8 @@ export const Card4 = ({title, img, tags = [], label,}) => {
 }
 export const Carousel = () => {
     const imagenesSwiper = [
-        { src: swiper1, alt: "Playa soleada" },
-        { src: swiper2, alt: "Atardecer frente al mar" },
+        { src: swiper1, alt: "Bebidas" },
+        { src: swiper2, alt: "Desayuno" },
         { src: swiper3, alt: "Bar" },
     ];
     const slides = [...imagenesSwiper, ...imagenesSwiper];
@@ -114,3 +117,21 @@ export const Carousel = () => {
       </Swiper>
     )
 }
+
+/*Componentes colapsados*/
+
+export const Acordion = ({ title, content }) => {
+  return (
+    <details className="accordion">
+      <summary className="accordion-summary">
+        <span className='accordion-title'>{title}</span>
+        <span><FontAwesomeIcon icon={faAngleUp} className='arrow' /></span>
+      </summary>
+      <div className="accordion-wrapper">
+        <div className="accordion-content">
+          <p className='accordion-p'>{content}</p>
+        </div>
+      </div>
+    </details>
+  );
+};

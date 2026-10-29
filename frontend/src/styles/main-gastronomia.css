@@ -137,7 +137,7 @@
 }
 .section4-gast {
     grid-row: fila-4;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondogast.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/services/eventos.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;

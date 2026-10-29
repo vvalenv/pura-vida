@@ -2,7 +2,7 @@
     grid-row: fila-2;
     width: 100%;
     display: grid;
-    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3];
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3] auto [fila-4];
 }
 .experience-section1 {
     display: flex;
@@ -24,6 +24,23 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     row-gap: 1em;
+}
+/*seccion 3*/
+.experience-section3 {
+    padding: 3em 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/services/desayuno.jpg');
+    background-size: cover;
+    background-position: 50% 40%;
+}
+.experience-section3 span {
+    display: block;
+}
+.experience-section3 p {
+    font-family: var(--font-subtitles);
+    font-size: 2.2em;
+    font-weight: 600;
+    text-align: center;
+    color: var(--white);
 }
 @media (min-width: 900px) {
     .content-experience-section2 {
