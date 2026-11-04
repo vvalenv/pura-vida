@@ -1,0 +1,64 @@
+.section-login {
+    grid-row: fila-2;
+    padding: 3em 0;
+}
+.login {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+    background: var(--cream);
+    color: var(--olive);
+    border: 1px solid var(--olive);
+    border-radius: 12px;
+    font-family: var(--font-subtitles);
+}
+.login__titulo {
+  margin: 0 0 0.25rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.login__campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.95rem;
+}
+.login__campo input {
+  padding: 0.7rem 0.85rem;
+  color: var(--olive);
+  background: var(--white);
+  border: 1px solid var(--olive);
+  border-radius: 8px;
+}
+.login__campo input:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 1px;
+  border-color: var(--olive);
+}
+.login__error {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--red);
+}
+.login__boton {
+  padding: 0.8rem 1rem;
+  font: inherit;
+  font-weight: 600;
+  color: var(--white);
+  background: var(--olive);
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.login__boton:hover {
+  background: var(--olive);
+}
+.login__boton:focus-visible {
+  outline: 2px solid var(--olive);
+  outline-offset: 2px;
+}

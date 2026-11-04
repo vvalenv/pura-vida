@@ -112,7 +112,7 @@
 }
 .card2-img {
     width: 100%;
-    height: 420px;
+    height: 320px;
 }
 .card2-content {
     text-align: center;
@@ -133,7 +133,7 @@
 /*card 3*/
 .card3 {
     height: 230px;
-    width: 180px;
+    width: min(100%, 180px);
     border-radius: 15px;
     margin: auto;
     display: grid;
@@ -371,7 +371,7 @@
 
 @media screen and (min-width: 650px) {
     .accordion {
-        width: 600px;
+        max-width: 600px;
     }
 }
 
@@ -414,7 +414,7 @@
         margin: auto;
     }
     .accordion {
-        width: 750px;
+        max-width: 750px;
     }
 }
 
@@ -426,6 +426,9 @@
         height: 400px;
     }
     /*card2*/
+    .card2 {
+        gap: 0;
+    }
     .card2-content {
         width: 100%;
         display: flex;

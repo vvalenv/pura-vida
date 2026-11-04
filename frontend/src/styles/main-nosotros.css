@@ -171,7 +171,7 @@
   margin-bottom: 1.5rem;
 }
 .gallery-title {
-  font-size: clamp(2rem, 7vw, 3.5rem);
+  font-size: 3em;
   font-family: var(--font-display);
   line-height: 1;
   text-transform: uppercase;

@@ -10,6 +10,7 @@ import yoga from '../assets/services/yoga.jpg'
 import otras from '../assets/services/otras.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export const Hero = () => {
     const section3Ref = useRef(null);
@@ -24,6 +25,9 @@ export const Hero = () => {
                     <button className="btn btn-blue btn-animated" type="button" onClick={scrollToSection}>
                         <span className="btn-text">Elegí tu espacio</span>
                     </button>
+                </div>
+                <div className="iconW-d">
+                    <a href="https://wa.me/5492235231465"><FontAwesomeIcon icon={faWhatsapp} className="iconW"/></a>
                 </div>
             </section>
             <section className="hero-section2">
@@ -80,7 +84,7 @@ export const Hero = () => {
             <section className='hero-section5' id="ubicacion">
                 <div className="hero-content">
                     <h2 className='card2-title'>Dónde estamos</h2>
-                    <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.232108556001!2d-57.586271499472566!3d-38.11153416969439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e0e254c4df6d%3A0x225515a4a8b9c00e!2sPlaya%20Pura%20Vida%20MDQ!5e0!3m2!1ses-419!2sar!4v1791926641797!5m2!1ses-419!2sar" width="600" height="450" allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
+                    <iframe className='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3139.232108556001!2d-57.586271499472566!3d-38.11153416969439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584e0e254c4df6d%3A0x225515a4a8b9c00e!2sPlaya%20Pura%20Vida%20MDQ!5e0!3m2!1ses-419!2sar!4v1791926641797!5m2!1ses-419!2sar" height="450" allowFullScreen="" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
             </section>
             <section className='hero-section6'>

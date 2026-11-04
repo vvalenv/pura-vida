@@ -17,14 +17,10 @@ export const Footer = () => {
                 <div className='content-footer-cont2'>
                     <div className='content-footer-links'>
                         <Link to="#contacto">Contacto</Link>
-                        <Link to="/nosotros">Nosotros</Link>
+                        <Link to="/login">Inicia sesion</Link>
                         <Link to="/#ubicacion">Ubicación</Link>
                         <Link to="#voluntariado">Voluntariado</Link>
                     </div>
-                    <button className='btn-wpp'>
-                        <FontAwesomeIcon icon={faWhatsapp} className='media-icon' />
-                        <p>Hablemos por Whatsapp</p> 
-                    </button>
                 </div>
             </div>
             <div className='div-media-icons'>
