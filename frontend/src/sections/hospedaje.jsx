@@ -15,16 +15,18 @@ export const Hospedaje = () => {
             <section className='hosp-section2'>
                 <Card2 title="Casas privadas"
                 img={casasPrivadas}
-                desc="Mesa larga, producto local y recetas caseras para compartir sin mirar la hora. De mañana a noche, el bar acompaña el plan."
+                desc="Mesa larga, producto local y recetas caseras para compartir sin mirar la hora. De mañana a noche, el bar acompaña el plan. En esta sección se puede consultar por la torre del mar y por la casa raiz, cada una con sus fotos y su descripción."
                 btnText="Ver casas y disponibilidad"
                 just="left"
                 style2="olive"
+                link="/hospedajes/casas"
                 />
                 <Card2 title="Hostel"
                 img={hotelPlaya}
-                desc="Mesa larga, producto local y recetas caseras para compartir sin mirar la hora. De mañana a noche, el bar acompaña el plan."
+                desc="Mesa larga, producto local y recetas caseras para compartir sin mirar la hora. De mañana a noche, el bar acompaña el plan. El hotel está abierto todo el año, con habitaciones privadas y compartidas."
                 btnText="Ver habitaciones disponibles"
                 style2="olive"
+                link="/hospedajes/hostel"
                 />
                 <Card2 title="Caravana"
                 img={caravana}
@@ -32,6 +34,7 @@ export const Hospedaje = () => {
                 btnText="Ver disponibilidad"
                 just="left"
                 style2="olive"
+                link="/hospedajes/caravana" 
                 />
             </section>
         </main>

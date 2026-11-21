@@ -6,15 +6,18 @@ export default function LoginForm({ onSubmit }) {
   const [contrasena, setContrasena] = useState("");
   const [error, setError] = useState("");
  
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if (!usuario.trim() || !contrasena) {
       setError("Completá tu usuario y tu contraseña.");
       return;
     }
     setError("");
-    // TODO: conectar con el backend (POST /api/login)
-    onSubmit?.({ usuario: usuario.trim(), contrasena });
+    try {
+      await onSubmit({ usuario: usuario.trim(), contrasena });
+    } catch (err) {
+      setError(err.message);
+    }
   };
  
   return (

@@ -79,6 +79,9 @@
     background-color: var(--white);
     grid-row: fila-3;
 }
+#section3 {
+    scroll-margin-top: 85px;
+}
 .hero-content2 {
     padding: 1em;
 }

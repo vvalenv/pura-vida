@@ -1,7 +1,7 @@
 .main-gast {
     grid-row: fila-2;
     display: grid;
-    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3] auto [fila-4] auto [fila-5];
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3] 80vh [fila-4] auto [fila-5];
 }
 .section1-gast {
     height: 100%;
@@ -168,6 +168,9 @@
 }
 
 @media (min-width: 768px) {
+    .main-gast {
+        grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3] auto[fila-4] auto [fila-5];
+    }
     .section1-gast {
         display: block;
     }
