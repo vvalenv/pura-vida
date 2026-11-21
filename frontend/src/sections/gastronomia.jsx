@@ -25,7 +25,9 @@ export const Gastronomia = () => {
                     <p>No hay congelados, no hay microondas, no hay apuro.</p>
                     <p>La parrilla prende a las 19:00. El mar está a diez metros. Eso es todo lo que necesitás saber.</p>
                 </article>
-                <button className='button-section2-gast'>Ver menú</button>
+                <a href="https://firebasestorage.googleapis.com/v0/b/restauradmin.appspot.com/o/menu_v2%2FqCawCLXtHHdGsyc1o919Q7CWD6S2%2Fpura-vida.html?alt=media" target="_blank" rel="noopener noreferrer">
+                    <button className='button-section2-gast'>Ver menú</button>
+                </a>
                 <div className="footer-section2-gast">
                     <div>
                         <h3>Atención por orden de llegada</h3>
@@ -55,7 +57,9 @@ export const Gastronomia = () => {
                     <div className="gast-item">Música en vivo opcional</div>
                     <div className="gast-item">Hasta 40 personas</div>
                 </div>
-                <button className='button-section2-gast'>Hablemos por WhatsApp</button>
+                <a href="https://wa.me/5492235231465?text=Hola! Quiero consultar por un evento privado en Playa Pura Vida" target="_blank" rel="noopener noreferrer">
+                    <button className='button-section2-gast'>Hablemos por WhatsApp</button>
+                </a>
             </section>
         </main>
     )

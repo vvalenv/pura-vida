@@ -1,0 +1,30 @@
+.main-casas {
+    grid-row: fila-2;
+    width: 100%;
+    display: grid;
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3];
+}
+.casas-section1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/services/fondocasas.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+.casas-section1 h1 {
+    font-size: 5rem;
+    margin-top: 0.2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    padding-left: 20px;
+    color: var(--white);
+    font-family: var(--font-display);
+    position: absolute;
+    bottom: 20px;
+}
+.casas-section1 h1 span {
+    display: block;
+}
+.casas-section2 {
+    grid-row: fila-2;
+}

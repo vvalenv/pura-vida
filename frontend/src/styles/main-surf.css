@@ -1,0 +1,44 @@
+.surf-main {
+    grid-row: fila-2;
+    display: grid;
+    grid-template-rows: [fila-1] 85vh [fila-2] auto [fila-3];
+}
+.surf-section1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/fondo-surf.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    grid-row: fila-1;
+}
+.surf-section1 h1 {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--font-display);
+    color: var(--white);
+    position: absolute;
+    letter-spacing: 3px;
+    bottom: 40px;
+    left: 20px;
+}
+.surf-section1 h1 span {
+    display: block;
+}
+.surf-section2 {
+    grid-row: fila-2;
+}
+.content-surf-section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.title-surf {
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: var(--font-display);
+    color: var(--blue);
+}
+.title-surf span {
+    display: block;
+}

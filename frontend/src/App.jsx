@@ -3,8 +3,10 @@ import { Init } from './pages/init.jsx'
 import { Accomodation } from './pages/accomodations.jsx'
 import { Experience } from './pages/experiences.jsx'
 import { Gastronomy } from './pages/gastronomy.jsx'
+import { Houses } from './pages/houses.jsx'
 import { Us } from './pages/us.jsx'
 import { Login } from './pages/login.jsx'
+import { Surf } from './pages/surf.jsx'
 import ScrollToHash from './functions/scrolltohash.jsx'
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Init />} />
         <Route path="/hospedajes" element={<Accomodation />} />
+        <Route path="/hospedajes/casas" element={<Houses />} />
+        <Route path="/surf" element={<Surf />} />
         <Route path="/gastronomia" element={<Gastronomy />} />
         <Route path="/experiencias" element={<Experience />} />
         <Route path="/nosotros" element={<Us />} />

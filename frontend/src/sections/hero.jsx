@@ -9,7 +9,7 @@ import surf from '../assets/services/surf.jpg'
 import yoga from '../assets/services/yoga.jpg'
 import otras from '../assets/services/otras.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClock } from '@fortawesome/free-solid-svg-icons';
+import { faBellConcierge, faCalendarDays, faClock, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export const Hero = () => {
@@ -37,7 +37,7 @@ export const Hero = () => {
                     <p className="hero-p-subtext">Acá cada día se hace con otro ritmo: mar cerca, comida hecha en casa y gente que llega para sentirse parte.</p>
                 </div>
             </section>
-            <section className="hero-section3" ref={section3Ref}>
+            <section className="hero-section3" id="section3" ref={section3Ref}>
                 <div className="hero-content2">
                     <p className="hero-p-extra">Para quedarse</p>
                     <h2 className="hero-subtitle2">Elegí como querés vivir la costa</h2>
@@ -45,7 +45,8 @@ export const Hero = () => {
                         <Card1 title="Casas privadas"
                         img="card-img-casas"
                         desc="Tu propio espacio frente al mar"
-                        btnText="Conoce las casas" />
+                        btnText="Conoce las casas"
+                        link="/hospedajes/casas" />
                         <Card1 title="Hostel"
                         img="card-img-hostel"
                         desc="Habitaciones privadas, compartidas. Nuevos amigos y espíritu libre"
@@ -56,7 +57,8 @@ export const Hero = () => {
                 <Card2 title="Gastronomía"
                     img={gastronomia}
                     desc="Mesa larga, producto local y recetas caseras para compartir sin mirar la hora. De mañana a noche, el bar acompaña el plan."
-                    btnText="Ver la propuesta" />
+                    btnText="Ver la propuesta" 
+                    link="/gastronomia"/>
             </section>
             <section className='hero-section4'>
                 <div className="hero-content">
@@ -66,7 +68,8 @@ export const Hero = () => {
                         <div className='card3-container'>
                             <img src={surfIcon} alt="Surf" className='card3-icon'/>
                             <Card3 title="Surf"
-                            img={surf} />
+                            img={surf} 
+                            link="/surf"/>
                         </div>
                         <div className='card3-container'>
                             <img src={yogaIcon} alt="Yoga" className='card3-icon'/>
@@ -92,13 +95,13 @@ export const Hero = () => {
                     <h2 className='card2-title'>Preguntas frecuentes</h2>
                     <article className="art-FAQ">
                         <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                        <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                        <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-                        <Acordion title={<><FontAwesomeIcon icon={faClock} className='accordion-icon'/> ¿Cuales son los horarios de check-in check-out?</>}
-                        content="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+                        content="Abrimos todos los dias de 10AM a 12AM (horario de verano). Durante ese horario se puede realizar el check-in y check-out."/>
+                        <Acordion title={<><FontAwesomeIcon icon={faLocationDot} className='accordion-icon'/> ¿Cual es la ubicacion?</>}
+                        content="Estamos en ruta 11 y calle 461, frente al acceso al barrio San Patricio, Mar Del Plata."/>
+                        <Acordion title={<><FontAwesomeIcon icon={faBellConcierge} className='accordion-icon'/> ¿Que servicios ofrecen?</>}
+                        content="Contamos con wifi en todo el lugar, estacionamiento privado, restaurante donde ofrecemos comida casera, bebidas naturales y cervezas artesanales. Contamos ademas con casas privadas y hotel, y ademas contamos con escuela de surf y clases de yoga."/>
+                        <Acordion title={<><FontAwesomeIcon icon={faCalendarDays} className='accordion-icon'/> ¿Se pueden consultar fechas para reservar los servicios?</>}
+                        content="Si, se pueden consultar fechas para cada uno de los servicios que ofrecemos, tenemos en este sitio secciones para consultar para hospedajes, clases de surf y de yoga."/>
                     </article>
                 </div>
             </section>

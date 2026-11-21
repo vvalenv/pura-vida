@@ -34,7 +34,7 @@ footer {
 .content-footer-links {
     display: flex;
     justify-content: center;
-    gap: 0.8em;
+    gap: 1em;
     font-size: 1.1rem;
     font-weight: 500;
 }
@@ -44,30 +44,8 @@ footer {
 .content-footer-links a:hover {
     color: var(--brown);
 }
-.btn-wpp {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    font-size: 1rem;
-    gap: 0.5em;
-    padding: 0.2em 1em;
-    max-width: 350px;
-    border-radius: 25px;
-    background-color: var(--cream);
-    color: var(--blue);
-    transition: all 0.3s ease;
-}
-.btn-wpp:hover {
-    background-color: var(--olive);
-    color: var(--cream);
-}
-.btn-wpp p {
-    font-size: 1.4rem;
-    font-weight: 500;
-}
 .media-icon {
-    font-size: 2em;
+    font-size: 2.5em;
     cursor: pointer;
 }
 
@@ -94,12 +72,5 @@ footer {
     }
     .content-footer-links {
         font-size: 1.3rem;
-    }
-    .btn-wpp {
-        max-width: 300px;
-         padding: 0.2em 0.6em;
-    }
-    .btn-wpp p {
-        font-size: 1.2rem;
     }
 }

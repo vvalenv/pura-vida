@@ -1,0 +1,277 @@
+.casas {
+  background: var(--cream);
+  color: var(--blue);
+}
+.casas-msg { 
+    text-align: center; 
+    padding: 3rem 1rem; 
+}
+
+/* ---------- Barra: capacidad / ambientes / baño ---------- */
+.casa-barra { 
+    background: var(--blue); 
+    color: var(--white); 
+    display: flex; 
+}
+.casa-barra div {
+  flex: 1 1 auto;
+  padding: 0.7rem 0.8rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+  font-size: 0.8rem;
+}
+.casa-barra div:last-child { 
+    border-right: 0; 
+}
+.casa-barra strong { 
+    display: block; 
+    font-size: 0.75rem; 
+    opacity: 0.85; 
+}
+
+.casa { 
+    border-bottom: 1.5px solid #d7673aea;
+    margin-bottom: 1rem;
+}
+
+/* ---------- Grilla: 1 columna en celular (orden del DOM) ---------- */
+.casa-grid {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+/* Título: en celular las palabras van en la misma línea */
+.casa-titulo {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  line-height: 1;
+  letter-spacing: 2px;
+  color: var(--blue);
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Fotos: carrusel horizontal con snap (se desliza con el dedo) */
+.casa-fotos { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0.5rem; 
+}
+.fotos-lista {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -1rem;          /* ocupa todo el ancho de la pantalla */
+  padding: 0 1rem;
+  scrollbar-width: none;
+}
+.fotos-lista::-webkit-scrollbar { 
+    display: none; 
+}
+.fotos-lista img {
+  flex: 0 0 85%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  scroll-snap-align: center;
+  display: block;
+}
+
+/* Descripción */
+.casa-texto p { 
+    font-size: 0.95rem; 
+    line-height: 1.5; 
+    margin: 0 0 1rem; 
+}
+
+/* Incluye */
+.casa-incluye { 
+    border-top: 1px solid var(--red); 
+    padding-top: 1.2rem; 
+}
+.casa-incluye h3 { 
+    font-weight: 500; 
+    margin: 0 0 1rem; 
+}
+.casa-incluye ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.casa-incluye li { 
+    display: flex; 
+    align-items: center; 
+    gap: 0.8rem; 
+    margin-bottom: 0.9rem; 
+    font-size: 0.95rem; 
+}
+
+/* Buscador */
+.casa-reserva {
+  background: var(--white);
+  padding: 1.25rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+.desde { 
+    font-size: 0.85rem; 
+}
+.precio { 
+    font-size: 3rem; 
+    color: var(--blue); 
+    line-height: 1.1; 
+}
+.precio small { 
+    font-size: 0.9rem; 
+    margin-left: 0.3rem; 
+    color: #555; 
+}
+.minimo { 
+    font-size: 0.85rem; 
+    margin: 0.4rem 0 1rem; 
+}
+.campos { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    border: 1px solid #c9b99d; 
+    margin-bottom: 1.25rem; 
+}
+.campos label { 
+    display: flex; 
+    flex-direction: column; 
+    font-size: 0.7rem; 
+    letter-spacing: 0.05em; 
+    padding: 0.6rem; 
+    min-width: 0; 
+}
+.campos label:first-child { 
+    border-right: 1px solid #c9b99d; 
+}
+.campo-ancho { 
+    grid-column: 1 / -1; 
+    border-top: 1px solid #c9b99d; 
+}
+/* 1rem evita el zoom automático de iOS al tocar un campo */
+.campos input, .campos select {
+  border: 0; 
+  background: transparent; 
+  font: inherit; 
+  font-size: 1rem;
+  padding: 0.3rem 0; 
+  min-height: 2.5rem; 
+  width: 100%;
+}
+
+/* Botones: alto mínimo cómodo para el dedo */
+.btn-buscar, .btn-galeria, .btn-whatsapp {
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  width: 100%; 
+  min-height: 3rem; 
+  box-sizing: border-box;
+  font: inherit; 
+  font-weight: 600; 
+  text-decoration: none; 
+  cursor: pointer;
+}
+.btn-buscar, .btn-galeria { 
+    background: var(--red); 
+    color: #fff; 
+    border: 0; 
+}
+.btn-whatsapp { 
+    margin-top: 0.7rem; 
+    color: var(--red); 
+    border: 1px solid var(--red); 
+    background: transparent;
+}
+.btn-galeria { 
+    font-size: 0.8rem; 
+    min-height: 2.5rem; 
+}
+
+/* ================= TABLET (≥ 700px): 2 columnas ================= */
+@media (min-width: 700px) {
+  .casa-barra div { 
+    flex: 0 0 auto; 
+    padding: 0.8rem 1.5rem; 
+    font-size: 0.9rem; 
+  }
+  .casa-barra strong { 
+    font-size: 0.85rem; 
+  }
+
+  .casa-grid {
+    grid-template-columns: 1fr minmax(280px, 340px);
+    grid-template-areas:
+      "titulo  reserva"
+      "fotos   reserva"
+      "texto   reserva"
+      "incluye reserva";
+    grid-template-rows: auto auto auto 1fr;
+    column-gap: 2rem;
+    padding: 2rem;
+  }
+  .casa-titulo  { 
+    grid-area: titulo;
+    margin-bottom: 0.3em;
+  }
+  .casa-fotos   { 
+    grid-area: fotos; 
+  }
+  .casa-incluye { 
+    grid-area: incluye; 
+    align-self: start; 
+  }
+  .casa-reserva { 
+    grid-area: reserva; 
+    align-self: start; 
+  }
+
+  .fotos-lista { 
+    margin: 0; 
+    padding: 0; 
+  }
+  .fotos-lista img { 
+    flex-basis: 48%; 
+  }
+}
+
+/* ================= ESCRITORIO (≥ 1000px): como la referencia ================= */
+@media (min-width: 1000px) {
+  .casa-grid {
+    grid-template-columns: 1.3fr 0.7fr 0.6fr 0.8fr;
+    grid-template-areas:
+      "titulo incluye fotos reserva"
+      "texto  incluye fotos reserva";
+    grid-template-rows: auto 1fr;
+    gap: 2rem;
+    padding: 2rem 1rem;
+  }
+  .casa-texto p { 
+    font-size: 1rem; 
+    line-height: 1.4; 
+  }
+  .casa-incluye { 
+    border-top: 0; 
+    border-left: 1px solid var(--cream); 
+    align-self: stretch; 
+  }
+  .casa-incluye li { 
+    font-size: 0.85rem; 
+  }
+  .casa-reserva { 
+    width: 350px;
+  }
+
+  /* Fotos: dos apiladas, como en el diseño */
+  .fotos-lista { flex-direction: column; overflow: visible; scroll-snap-type: none; }
+  .fotos-lista img { flex: none; width: 100%; aspect-ratio: 3 / 4; }
+  .fotos-lista img:nth-child(n+3) { display: none; }
+  .btn-galeria { font-size: 0.75rem; }
+
+  .precio { font-size: 3.5rem; }
+}
